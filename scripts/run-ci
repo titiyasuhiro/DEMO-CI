@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Prepare container(s) and install dependencies
+docker-compose build;
+docker-compose run --rm test-api

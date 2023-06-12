@@ -1,0 +1,38 @@
+{
+  "private": true,
+  "name": "node-ci-workshop",
+  "version": "1.0.0",
+  "description": "Node CI Workshop with Github Actions",
+  "homepage": "https://github.com/ntalle-support/node-ci-workshop",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ntalle-support/node-ci-workshop.git"
+  },
+  "bugs": "https://github.com/ntalle-support/node-ci-workshop/issues",
+  "author": {
+    "name": "Nicolas Talle",
+    "url": "https://github.com/ntalle-support"
+  },
+  "license": "proprietary",
+  "main": "./src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "NODE_ENV=production DEBUG=info,warn,error node ./src/app.js",
+    "dev": "NODE_ENV=development nodemon ./src/app.js",
+    "test": "npx mocha ./test/**/*.test.js"
+  },
+  "dependencies": {
+    "debug": "^4.1.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.2.0",
+    "eslint-config-common": "^3.0.1",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "mocha": "^8.0.1",
+    "unit.js": "^2.1.1"
+  }
+}

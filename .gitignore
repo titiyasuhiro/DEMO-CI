@@ -1,0 +1,15 @@
+*.log
+._*
+node_modules/
+.local/
+/public/
+.Trash-1000/
+.DS_Store
+__MACOSX/
+Thumbs.db
+.idea/
+.tmp/
+
+package-lock.json
+yarn.lock
+.vscode

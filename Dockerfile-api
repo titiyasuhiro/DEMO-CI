@@ -1,0 +1,13 @@
+FROM node:18.16
+
+ENV TIME_ZONE=Europe/Paris
+
+RUN echo $TIME_ZONE | tee /etc/timezone \
+  && dpkg-reconfigure -f noninteractive tzdata
+
+WORKDIR /usr/app
+
+USER node
+
+# Install global dependencies
+RUN yarn global add nodemon

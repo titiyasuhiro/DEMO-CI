@@ -1,0 +1,24 @@
+version: '3.4'
+
+networks:
+  backend:
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: ./Dockerfile-api
+    networks:
+      - backend
+    volumes:
+      - ./api:/usr/app/
+    command: bash
+    tty: true
+
+  test-api:
+    build:
+      context: .
+      dockerfile: ./Dockerfile-test-api
+    networks:
+      - backend
+    command: yarn test
