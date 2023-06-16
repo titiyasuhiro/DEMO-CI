@@ -1,5 +1,7 @@
 import test from 'unit.js';
 
+const multiply = require('../src/app');
+
 describe('multiply', function() {
   it('devrait retourner un nombre positif', function() {
     const result = multiply(5, 9);
