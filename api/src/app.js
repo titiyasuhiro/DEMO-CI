@@ -4,6 +4,6 @@ console.log('Hello World from API!');
 function multiply(a, b) {
   return a * b;
 }
-multiply(4, 9);
+console.log(multiply(4, 9));
 
 export default multiply;
