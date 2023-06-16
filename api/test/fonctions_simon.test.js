@@ -1,6 +1,6 @@
 import test from 'unit.js';
 
-const multiply = require('../src/app');
+import multiply from '../src/app.js';
 
 describe('multiply', function() {
   it('devrait retourner un nombre positif', function() {
